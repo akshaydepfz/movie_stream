@@ -18,11 +18,11 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (context) => LandingProvider()),
-        ChangeNotifierProvider(create: (context) => AuthProvider()),
+        ChangeNotifierProvider(create: (context) => AuthProvider( )),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Home Screen',
+        title: 'Movie Streaming',
         darkTheme: ThemeData(
           brightness: Brightness.dark, // Dark theme
           primarySwatch: Colors.deepOrange,
